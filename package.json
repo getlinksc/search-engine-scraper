@@ -4,13 +4,23 @@
   "description": "Parse search engine HTML results into structured JSON or Markdown",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
-  "keywords": ["search", "parser", "scraper", "google", "bing", "duckduckgo", "html"],
+  "keywords": [
+    "search",
+    "parser",
+    "scraper",
+    "google",
+    "bing",
+    "duckduckgo",
+    "html"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=18"
@@ -20,9 +30,9 @@
     "turndown": "^7.2.2"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0",
+    "@types/jest": "^29.5.14",
     "@types/turndown": "^5.0.6",
-    "jest": "^30.3.0",
+    "jest": "^29.7.0",
     "ts-jest": "^29.4.6",
     "typescript": "^5.5.3"
   }
