@@ -5,8 +5,8 @@ Thanks for your interest in contributing!
 ## Setup
 
 ```bash
-git clone https://github.com/getlinksc/search-engine-parser.git
-cd search-engine-parser
+git clone https://github.com/getlinksc/parse-search-engine.git
+cd parse-search-engine
 npm install
 ```
 

@@ -1,10 +1,10 @@
-# search-engine-parser
+# parse-search-engine
 
-[![Tests](https://github.com/getlinksc/search-engine-parser/workflows/Tests/badge.svg)](https://github.com/getlinksc/search-engine-parser/actions?query=workflow%3ATests)
-[![codecov](https://codecov.io/gh/getlinksc/search-engine-parser/branch/main/graph/badge.svg)](https://codecov.io/gh/getlinksc/search-engine-parser)
-[![npm version](https://img.shields.io/npm/v/search-engine-parser.svg)](https://www.npmjs.com/package/search-engine-parser)
-[![npm downloads](https://img.shields.io/npm/dm/search-engine-parser.svg)](https://www.npmjs.com/package/search-engine-parser)
-[![Node.js](https://img.shields.io/node/v/search-engine-parser.svg)](https://nodejs.org)
+[![Tests](https://github.com/getlinksc/parse-search-engine/workflows/Tests/badge.svg)](https://github.com/getlinksc/parse-search-engine/actions?query=workflow%3ATests)
+[![codecov](https://codecov.io/gh/getlinksc/parse-search-engine/branch/main/graph/badge.svg)](https://codecov.io/gh/getlinksc/parse-search-engine)
+[![npm version](https://img.shields.io/npm/v/parse-search-engine.svg)](https://www.npmjs.com/package/parse-search-engine)
+[![npm downloads](https://img.shields.io/npm/dm/parse-search-engine.svg)](https://www.npmjs.com/package/parse-search-engine)
+[![Node.js](https://img.shields.io/node/v/parse-search-engine.svg)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Parse search engine HTML results into structured **JSON** or **Markdown**. Auto-detects Google, Bing, and DuckDuckGo.
@@ -14,13 +14,13 @@ Parse search engine HTML results into structured **JSON** or **Markdown**. Auto-
 ## Install
 
 ```bash
-npm install search-engine-parser
+npm install parse-search-engine
 ```
 
 ## Quick start
 
 ```typescript
-import { SearchEngineParser } from "search-engine-parser";
+import { SearchEngineParser } from "parse-search-engine";
 
 const scraper = new SearchEngineParser();
 
@@ -118,7 +118,7 @@ Learn how to scrape websites with Python...
 ### Access parsed data directly
 
 ```typescript
-import { detect, getParserForEngine } from "search-engine-parser";
+import { detect, getParserForEngine } from "parse-search-engine";
 
 // Detect engine and get confidence score
 const detection = detect(html);
@@ -138,9 +138,9 @@ console.log(results.results.length);
 Implement the `BaseParser` interface:
 
 ```typescript
-import type { BaseParser } from "search-engine-parser";
+import type { BaseParser } from "parse-search-engine";
 import type { CheerioAPI } from "cheerio";
-import type { SearchResults } from "search-engine-parser";
+import type { SearchResults } from "parse-search-engine";
 import * as cheerio from "cheerio";
 
 class YandexParser implements BaseParser {

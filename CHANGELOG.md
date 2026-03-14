@@ -2,7 +2,7 @@
 
 ## [0.0.1] - 2026-03-14
 
-Initial release of `search-engine-parser`.
+Initial release of `parse-search-engine`.
 
 ### Features
 

@@ -5,7 +5,7 @@
 The main class. Import and instantiate once, call `parse()` as many times as needed.
 
 ```typescript
-import { SearchEngineParser } from "search-engine-parser";
+import { SearchEngineParser } from "parse-search-engine";
 const scraper = new SearchEngineParser();
 ```
 
@@ -37,7 +37,7 @@ interface ParseOptions {
 Low-level detection. Returns the best-matching parser or `null`.
 
 ```typescript
-import { detect } from "search-engine-parser";
+import { detect } from "parse-search-engine";
 
 const result = detect(html);
 // result: { engine: "google", parser: GoogleParser, confidence: 0.9 } | null
@@ -60,7 +60,7 @@ interface DetectionResult {
 Returns a parser instance for the specified engine.
 
 ```typescript
-import { getParserForEngine } from "search-engine-parser";
+import { getParserForEngine } from "parse-search-engine";
 
 const parser = getParserForEngine("bing");
 const results = parser.parse(html); // returns SearchResults object
@@ -73,7 +73,7 @@ const results = parser.parse(html); // returns SearchResults object
 Low-level formatters. Accept a `SearchResults` object and return a string.
 
 ```typescript
-import { getParserForEngine, formatJSON, formatMarkdown } from "search-engine-parser";
+import { getParserForEngine, formatJSON, formatMarkdown } from "parse-search-engine";
 
 const results = getParserForEngine("google").parse(html);
 const json = formatJSON(results);
