@@ -1,5 +1,5 @@
 {
-  "name": "search-engine-parser",
+  "name": "@getlinksc/search-engine-parser",
   "version": "0.0.1",
   "description": "Parse search engine HTML results into structured JSON or Markdown",
   "main": "dist/index.js",
