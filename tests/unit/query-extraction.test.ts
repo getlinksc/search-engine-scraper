@@ -1,4 +1,4 @@
-import * as cheerio from "cheerio";
+import * as cheerio from "cheerio/slim";
 import { GoogleParser } from "../../src/parsers/google";
 import { BingParser } from "../../src/parsers/bing";
 import { DuckDuckGoParser } from "../../src/parsers/duckduckgo";
