@@ -1,4 +1,4 @@
-import * as cheerio from "cheerio";
+import * as cheerio from "cheerio/slim";
 import type { BaseParser } from "./parsers/base";
 import type { EngineName } from "./types";
 import { GoogleParser } from "./parsers/google";

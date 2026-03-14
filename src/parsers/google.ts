@@ -1,5 +1,5 @@
-import * as cheerio from "cheerio";
-import type { CheerioAPI } from "cheerio";
+import * as cheerio from "cheerio/slim";
+import type { CheerioAPI } from "cheerio/slim";
 import type { Element } from "domhandler";
 import type { BaseParser } from "./base";
 import type { SearchResult, SearchResults, EngineName } from "../types";
